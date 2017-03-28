@@ -1,0 +1,9 @@
+test 
+{% for iface_name in iface_list %}
+int {{iface_name}}
+switch access vlan {{vlan_name}}
+no shut
+
+{% endfor %}
+end
+!woot?
